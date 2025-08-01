@@ -9,34 +9,37 @@ A full-stack app to manage your tasks and ask AI questions using OpenAI API.
 - React + Node.js + Tailwind
 
 ## Setup Instructions
+# Simple Q&A Web App
 
-### 1. Backend
+## Features
+- Ask questions to an AI model
+- Get instant responses from a public LLM API
+- Simple and clean UI
 
-```bash
-cd backend
-npm install
-echo "TOGETHER_API_KEY=your_key" > .env
-node server.js
+## Setup
 
-2. Frontend
-bash
-Copy
-Edit
-cd frontend
-npm install
-npm run dev
+### Backend
+1. Install Node.js dependencies: `npm install`
+2. Set your OpenAI API key in `.env` file: `OPENAI_API_KEY=your_key`
+3. Run backend server: `npm start` or `node index.js`
+
+### Frontend
+1. Install dependencies: `npm install`
+2. Run frontend app: `npm start`
+
+## How to Use
+- Enter your question in the text box
+- Click Submit
+- View the AI-generated answer below
+
+## Notes
+- Make sure backend server is running on `http://localhost:5000`
+- Frontend will call the backend API for responses
 
 
 
----
 
-###  Test Everything Locally
 
-- Run both frontend and backend
-- Add some tasks
-- Ask "What is React?" or "Who is Elon Musk?" in the AI section
-
----
 
 ###  Push to GitHub
 
